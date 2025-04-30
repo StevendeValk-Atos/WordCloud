@@ -1,0 +1,6 @@
+@WordCloud.Server_HostAddress = http://localhost:5079
+
+GET {{WordCloud.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
