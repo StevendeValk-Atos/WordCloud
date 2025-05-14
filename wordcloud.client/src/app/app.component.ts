@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 
 interface WeatherForecast {
   date: string;
@@ -15,11 +15,16 @@ interface WeatherForecast {
 })
 export class AppComponent implements OnInit {
   public forecasts: WeatherForecast[] = [];
-
   constructor(private http: HttpClient) {}
 
+  public cloudData: any[] = [];
+
   ngOnInit() {
-    this.getForecasts();
+    this.cloudData = ["Hello", "world", "normally", "you", "want", "more", "words",
+    "than", "this"].map(function (d) {
+      return { text: d, value: 10 + Math.random() * 90};
+    })
+    // this.getForecasts();
   }
 
   getForecasts() {
