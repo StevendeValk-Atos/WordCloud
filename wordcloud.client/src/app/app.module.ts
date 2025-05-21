@@ -5,10 +5,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularD3CloudModule } from 'angular-d3-cloud';
+import { BrandHeaderComponent } from './components/molecules/brand-header/brand-header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BrandHeaderComponent
   ],
   imports: [
     AppRoutingModule,

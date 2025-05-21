@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5em;
+    padding: 0;
+    background-color: #0073e6;
+}
+
+#header-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#atos-header-logo {
+    height: 3em;
+    display: block;
+    margin: 0 2em;
+}
+
+#header-curves {
+    height: 5em;
+}
